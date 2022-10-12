@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <title>Document</title>
+</head>
+<body>
+  <h1 class="title">Fx Exchange</h1>
+    <div class="card">
+
+        <div class="title">Book Trade</div>
+
+        <button type="button" class="btn btn-info btn-circle btn-xl" routerLink="/bookTrade"><i class="glyphicon glyphicon-ok"></i></button>
+
+    
+      </div>
+      <!--/card-->
+    
+      <div class=" card">
+        <div class="title">Print Trade</div>
+        <div class="icon">
+        </div>
+        <!--/icon-->
+        <button type="button" class="btn btn-primary btn-circle btn-xl" (click)="onPrint()"><i class="glyphicon glyphicon-list"></i></button>
+        <!-- <button class="btn" (click)="onPrint()">Click here to Print Trade</button> -->
+    </div>
+      <!--/card-->
+    
+      <div class="card">
+    
+        <div class="title">Exit</div>
+    
+        <div class="icon">
+        </div>
+    
+    
+        <!-- <button class="btn" (click)="onExit()">Click here to Exit</button> -->
+        <button type="button" class="btn btn-warning btn-circle btn-xl" (click)="onExit()"><i class="glyphicon glyphicon-remove"></i></button>
+
+      </div>
+      <!--/card-->
+
+</body>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</html>

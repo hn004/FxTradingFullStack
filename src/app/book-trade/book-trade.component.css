@@ -1,0 +1,78 @@
+
+body{
+	/* background-image: url('/assets/img6.jpg') no-repeat center fixed; */
+    /* background-size: cover; */
+	/* background-size: cover;  */
+}
+.h3{
+	text-align: center;
+	color: blue;
+	text-decoration: solid;
+	font-size: 30px;
+}
+.container{
+    margin-top: 10px;
+    width: 50%;
+    background-color: white;
+    box-shadow: 15px 5px 15px  rgba(255, 255, 255, 0.18);
+    border-radius: 15px;
+}
+.myclass {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.myclass > * {
+    width: 100%;
+}
+:host ::ng-deep .mat-radio-container{
+    height: 15px;
+    width: 15px;
+  }
+:host ::ng-deep .mat-radio-outer-circle{
+    height: 15px;
+    width: 15px;
+}
+:host ::ng-deep .mat-radio-inner-circle{
+    height: 15px;
+    width: 15px;
+}
+:host ::ng-deep .mat-radio-button .mat-radio-ripple{
+    height: 30px; /*double of your required circle radius*/
+    width: 30px;  /*double of your required circle radius*/
+    left: calc(50% - 15px); /*'10px'-same as your required circle radius*/
+    top: calc(50% - 15px); /*'10px'-same as your required circle radius*/
+}
+button{
+    margin-left: 10px;
+}
+
+.subfile{
+	/* color: greenyellow; */
+	align-items: center;
+	text-align: center;
+}
+.card{
+	margin: 120px 100px;
+	border: 2px solid lightgreen;
+	border-radius: 15px;
+	background-color: aliceblue;
+	opacity: 0.95;
+}
+/* .but{
+	align-items: center;
+	margin: 10px 15px;
+	size: 10px;
+	color: aquamarine;
+} */
+
+.mat-raised-button{
+	border: 2px solid lightblue;
+	size: 5px;
+	align-items: center;
+	margin: 5px 10px 8px 2px;
+	color: whitesmoke;
+	/* background-color: rgb(100, 237, 100); */
+	background-color: black;
+}
+

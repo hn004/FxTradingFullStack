@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <html>
+     
+    <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+ <body>
+    <br><h3 class="h3" >Book Trade</h3><hr>
+    <div class="card">
+    <div class="row">
+      <div class="col">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+          <mat-form-field >
+            <mat-label class="subfile">Name</mat-label>
+              <input matInput type="text" placeholder="Enter Your Name..."
+              #name="ngModel" ngModel 
+              name="name"        
+              >
+              <mat-error *ngIf="name.touched && !name.valid"> ** Please Enter the Valid Name</mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="myclass">
+            <mat-label class="subfile">Add Currency Pair</mat-label>
+            <!-- <mat-label class="subfile">currencyPair</mat-label> -->
+            <!-- <input matInput type="text" placeholder="Enter the Curreny Name"
+            #currencypair="ngModel" [(ngModel)]="load.currencypair" 
+            name="currencyPair"        
+            required >
+            <mat-error *ngIf="currencypair.touched && !currencypair.valid"> ** Please Enter the  Currency Name</mat-error> -->
+              <!-- currencyPairs -->
+            <mat-select required #currencyPair="ngModel" name="currencyPair" ngModel>
+              <mat-option>---</mat-option>
+              <mat-option  *ngFor="let item of currencyPairs" [value]="item" class="myclass">
+              {{item}}
+              </mat-option>
+          </mat-select>
+          </mat-form-field>
+
+
+          <mat-form-field appearance="outline" class="myclass" [color]="'accent'">
+            <mat-label class="subfile">Transfer Amount</mat-label>
+            <input matInput type="number" placeholder="Enter the Amount to Transfer..."
+                  #amount="ngModel" ngModel 
+                  name="amount"
+                  required min="1">
+
+              <mat-error *ngIf="amount.touched && !amount.valid"> ** Please Enter the Valid Amount</mat-error>
+          </mat-form-field>
+
+          <mat-radio-group>
+            <mat-label class="subfile">Do You Want Exchange Rate?&nbsp;</mat-label><br>
+            <mat-radio-button name="getRate" [value]="item" *ngFor="let item of exchangeRate">{{item}}&nbsp;
+            </mat-radio-button><br>        
+          </mat-radio-group>  
+          <button mat-raised-button color="accent" class="but">Submit</button>
+
+
+        </form>
+        <span>
+          <button (click)="onBook()"  mat-raised-button color="primary"
+          [disabled]="!isDisabled" [hidden]="isHidden" class="but"
+          >Book</button>
+          <button (click)="onCancel()" mat-raised-button color="warn"
+          [hidden]="isHidden"
+          >Cancel</button>
+      </span><br><br>
+      </div>
+    </div>
+  </div>
+    
+
+
+</body> 
+
+</html>
+
+</body>
+
+</html>
+

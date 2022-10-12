@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+/* <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> */
+
+body{
+    width: 100%;
+    height: 100%; 
+  background-image: url('/assets/fxbackg.jpg');
+   /* display: block;
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  background-size: cover; 
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
